@@ -1,0 +1,3 @@
+[submodule "Chinatsu/vendor/spdlog"]
+	path = Chinatsu/vendor/spdlog
+	url = https://github.com/gabime/spdlog
