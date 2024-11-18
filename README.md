@@ -1,3 +1,5 @@
+<img alt="Chinatsu Logo" src="./assets/chinatsu-logo.png" />
+
 # Chinatsu
 
 **Chinatsu** is a C++ game engine project designed as a personal challenge and a showcase of my C++ skills. This project aims to deepen my understanding of game engine fundamentals by building core systems from scratch and tackling complex graphics programming. 
