@@ -6,7 +6,7 @@
 
 ### Project Inspiration
 
-The name **Chinatsu** (千夏) means "Thousand Summers" in Japanese, symbolizing warmth, energy, and the pursuit of beauty—all qualities I hope to bring into this engine. I drew inspiration for the name from one of my favorite manga series, *Ao no Hako* (Blue Box), where the main character, Chinatsu Kaho, embodies determination and strength. Just as her character pursues her dreams with unwavering dedication, this project represents my commitment to mastering C++ and game development.
+The name **Chinatsu** (千夏) means "Thousand Summers" in Japanese, symbolizing warmth, energy, and the pursuit of beauty—all qualities I hope to bring into this engine. I drew inspiration for the name from one of my favorite manga series, *Ao no Hako* (Blue Box), where the main character, Chinatsu Kano, embodies determination and strength. Just as her character pursues her dreams with unwavering dedication, this project represents my commitment to mastering C++ and game development.
 
 ### Features (Planned)
 
