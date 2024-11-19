@@ -21,15 +21,15 @@ namespace Chinatsu
 }
 
 // Core Logging Macros
-#define CH_CORE_TRACE(...)    ::Chinatsu::Log::GetCoreLogger()->trace(__VA_ARGS__)
-#define CH_CORE_INFO(...)     ::Chinatsu::Log::GetCoreLogger()->info(__VA_ARGS__)
-#define CH_CORE_WARN(...)     ::Chinatsu::Log::GetCoreLogger()->warn(__VA_ARGS__)
-#define CH_CORE_ERROR(...)    ::Chinatsu::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define CH_CORE_CRITICAL(...)    ::Chinatsu::Log::GetCoreLogger()->critical(__VA_ARGS__)
+#define CN_CORE_TRACE(...)    ::Chinatsu::Log::GetCoreLogger()->trace(__VA_ARGS__)
+#define CN_CORE_INFO(...)     ::Chinatsu::Log::GetCoreLogger()->info(__VA_ARGS__)
+#define CN_CORE_WARN(...)     ::Chinatsu::Log::GetCoreLogger()->warn(__VA_ARGS__)
+#define CN_CORE_ERROR(...)    ::Chinatsu::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define CN_CORE_CRITICAL(...) ::Chinatsu::Log::GetCoreLogger()->critical(__VA_ARGS__)
 
 // Client Logging Macros
-#define CH_TRACE(...)         ::Chinatsu::Log::GetClientLogger()->trace(__VA_ARGS__)
-#define CH_INFO(...)          ::Chinatsu::Log::GetClientLogger()->info(__VA_ARGS__)
-#define CH_WARN(...)          ::Chinatsu::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define CH_ERROR(...)         ::Chinatsu::Log::GetClientLogger()->error(__VA_ARGS__)
-#define CH_CRITICAL(...)      ::Chinatsu::Log::GetClientLogger()->critical(__VA_ARGS__)
+#define CN_TRACE(...)         ::Chinatsu::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define CN_INFO(...)          ::Chinatsu::Log::GetClientLogger()->info(__VA_ARGS__)
+#define CN_WARN(...)          ::Chinatsu::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define CN_ERROR(...)         ::Chinatsu::Log::GetClientLogger()->error(__VA_ARGS__)
+#define CN_CRITICAL(...)      ::Chinatsu::Log::GetClientLogger()->critical(__VA_ARGS__)

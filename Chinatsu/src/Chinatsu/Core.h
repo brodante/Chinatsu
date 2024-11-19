@@ -1,7 +1,7 @@
 #pragma once
 
-#ifdef CH_PLATFORM_WINDOWS
-	#ifdef CH_BUILD_DLL
+#ifdef CN_PLATFORM_WINDOWS
+	#ifdef CN_BUILD_DLL
 		#define CHINATSU_API __declspec(dllexport)
 	#else
 		#define CHINATSU_API __declspec(dllimport)
