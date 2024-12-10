@@ -4,6 +4,9 @@
     <Filter Include="Chinatsu">
       <UniqueIdentifier>{440E8293-30DB-DC9E-59F4-CA464520122D}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Chinatsu\Events">
+      <UniqueIdentifier>{A885D873-1411-4638-1D22-C92C892CA238}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Chinatsu.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Chinatsu\EntryPoint.h">
       <Filter>Chinatsu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chinatsu\Events\ApplicationEvent.h">
+      <Filter>Chinatsu\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chinatsu\Events\Event.h">
+      <Filter>Chinatsu\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chinatsu\Events\KeyEvent.h">
+      <Filter>Chinatsu\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chinatsu\Events\MouseEvent.h">
+      <Filter>Chinatsu\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Chinatsu\Log.h">
       <Filter>Chinatsu</Filter>
