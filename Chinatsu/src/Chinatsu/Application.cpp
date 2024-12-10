@@ -26,10 +26,12 @@ namespace Chinatsu {
 }
 // Specialize fmt::formatter for WindowResizeEvent outside the Chinatsu namespace
 template <>
-struct fmt::formatter<Chinatsu::WindowResizeEvent> : fmt::formatter<std::string> {
+struct fmt::formatter<Chinatsu::WindowResizeEvent> : fmt::formatter<std::string>
+{
 	// This function tells fmt how to format the custom WindowResizeEvent
 	template <typename FormatContext>
-	auto format(const Chinatsu::WindowResizeEvent& event, FormatContext& ctx) const {
+	auto format(const Chinatsu::WindowResizeEvent& event, FormatContext& ctx) const
+	{
 		return fmt::format_to(ctx.out(), "{} x {}", event.GetWidth(), event.GetHeight());
 	}
 };
