@@ -18,6 +18,9 @@ project "Chinatsu"
 	-- dir for output
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "cnpch.h"
+	pchsource "Chinatsu/src/cnpch.cpp"
 	
 	files
 	{

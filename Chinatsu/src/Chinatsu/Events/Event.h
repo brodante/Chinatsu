@@ -2,9 +2,6 @@
 
 #include "Chinatsu/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Chinatsu {
 
 	// Events in Chinatsu are currently blocking, meaning when an event occurs it

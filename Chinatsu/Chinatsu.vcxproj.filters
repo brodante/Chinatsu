@@ -34,6 +34,7 @@
     <ClInclude Include="src\Chinatsu\Log.h">
       <Filter>Chinatsu</Filter>
     </ClInclude>
+    <ClInclude Include="src\cnpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Chinatsu\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Chinatsu\Log.cpp">
       <Filter>Chinatsu</Filter>
     </ClCompile>
+    <ClCompile Include="src\cnpch.cpp" />
   </ItemGroup>
 </Project>
