@@ -1,5 +1,6 @@
 #pragma once
 
+#include "cnpch.h"
 #include "Chinatsu/Core.h"
 
 namespace Chinatsu {
