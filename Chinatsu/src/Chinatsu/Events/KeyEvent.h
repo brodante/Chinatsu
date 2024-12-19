@@ -1,8 +1,6 @@
 #pragma once
 #include "Event.h"
 
-#include <sstream>
-
 namespace Chinatsu
 {
 	class CHINATSU_API KeyEvent : public Event

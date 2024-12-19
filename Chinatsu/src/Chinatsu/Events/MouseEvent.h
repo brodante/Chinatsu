@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Chinatsu 
 {
 	class CHINATSU_API MouseMovedEvent : public Event
