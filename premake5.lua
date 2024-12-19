@@ -11,6 +11,12 @@ workspace "Chinatsu"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Chinatsu/vendor/GLFW/include"
+
+include "Chinatsu/vendor/GLFW"
+
 project "Chinatsu"
 	location "Chinatsu"
 	kind "SharedLib"
@@ -32,7 +38,14 @@ project "Chinatsu"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

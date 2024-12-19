@@ -2,27 +2,27 @@
 #include "Application.h"
 
 #include "Chinatsu/Events/ApplicationEvent.h"
-#include "Chinatsu/Log.h"
+
+#include <GLFW/glfw3.h>
 
 namespace Chinatsu {
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
+
 	Application::~Application()
 	{
 	}
+
 	void Application::Run()
 	{	
-		WindowResizeEvent e(1280, 720);
-		if (e.IsInCategory(EventCategoryApplication))
+		while (m_Running)
 		{
-			CN_TRACE(e);
+			glClearColor(1, 0, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
 		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			CN_TRACE(e);
-		}
-		while (true);
 	}
 }
 // Specialize fmt::formatter for WindowResizeEvent outside the Chinatsu namespace
