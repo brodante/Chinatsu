@@ -1,3 +1,6 @@
 [submodule "Chinatsu/vendor/spdlog"]
 	path = Chinatsu/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Chinatsu/vendor/GLFW"]
+	path = Chinatsu/vendor/GLFW
+	url = https://github.com/brodante/glfw
