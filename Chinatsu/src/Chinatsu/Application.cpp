@@ -21,8 +21,12 @@ namespace Chinatsu {
 
 	void Application::OnEvent(Event& e)
 	{
+		EventDispatcher dispatcher(e);
+		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
+
 		CN_CORE_TRACE("{0}", e);
 	}
+
 
 	void Application::Run()
 	{	
@@ -33,7 +37,16 @@ namespace Chinatsu {
 			m_Window->OnUpdate();
 		}
 	}
+
+	bool Application::OnWindowClose(WindowCloseEvent& e)
+	{
+		m_Running = false;
+		return true;
+	}
+
 }
+
+
 // Specialize fmt::formatter for WindowResizeEvent outside the Chinatsu namespace
 //template <>
 //struct fmt::formatter<Chinatsu::WindowResizeEvent> : fmt::formatter<std::string>
