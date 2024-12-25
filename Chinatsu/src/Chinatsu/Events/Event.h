@@ -39,8 +39,9 @@ namespace Chinatsu {
 
     class CHINATSU_API Event
     {
-        friend class EventDispatcher;
     public:
+		bool Handled = false;
+
         virtual EventType GetEventType() const  = 0;
         virtual const char* GetName() const     = 0;
         virtual int GetCategoryFlags() const    = 0;
@@ -50,8 +51,10 @@ namespace Chinatsu {
         {
             return GetCategoryFlags() & category;
         }
-    protected:
-        bool m_Handled = false;  // Flag to track if the event has been handled
+		//inline bool Handled() const { return m_Handled; } //getter for m_Handled ;)
+
+    //protected:
+    //    bool m_Handled = false;  // Flag to track if the event has been handled
     };
 
     // The EventDispatcher class processes and dispatches events
@@ -70,7 +73,7 @@ namespace Chinatsu {
         {
             if (m_Event.GetEventType() == T::GetStaticType())
             {
-                m_Event.m_Handled = func(*(T*)&m_Event);  // Cast the base event to derived type
+                m_Event.Handled = func(*(T*)&m_Event);  // Cast the base event to derived type
                 return true;
             }
             return false;

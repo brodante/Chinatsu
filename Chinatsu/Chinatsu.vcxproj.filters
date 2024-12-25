@@ -7,6 +7,12 @@
     <Filter Include="Chinatsu\Events">
       <UniqueIdentifier>{A885D873-1411-4638-1D22-C92C892CA238}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Chinatsu.h" />
@@ -31,20 +37,39 @@
     <ClInclude Include="src\Chinatsu\Events\MouseEvent.h">
       <Filter>Chinatsu\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Chinatsu\Layer.h">
+      <Filter>Chinatsu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Chinatsu\LayerStack.h">
+      <Filter>Chinatsu</Filter>
+    </ClInclude>
     <ClInclude Include="src\Chinatsu\Log.h">
       <Filter>Chinatsu</Filter>
     </ClInclude>
+    <ClInclude Include="src\Chinatsu\Window.h">
+      <Filter>Chinatsu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\cnpch.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Chinatsu\Application.cpp">
       <Filter>Chinatsu</Filter>
     </ClCompile>
+    <ClCompile Include="src\Chinatsu\Layer.cpp">
+      <Filter>Chinatsu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Chinatsu\LayerStack.cpp">
+      <Filter>Chinatsu</Filter>
+    </ClCompile>
     <ClCompile Include="src\Chinatsu\Log.cpp">
       <Filter>Chinatsu</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\cnpch.cpp" />
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
