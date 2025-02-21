@@ -3,7 +3,7 @@
 
 #include "Chinatsu/Events/ApplicationEvent.h"
 
-#include <GLFW/glfw3.h>
+#include <glad/glad.h>
 
 namespace Chinatsu {
 
@@ -13,6 +13,7 @@ namespace Chinatsu {
 	{
 		m_Window = std::unique_ptr<Window>(Window::Create());
 		m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent)); // Bind the OnEvent function to the Application class
+
 	}
 
 	Application::~Application()
