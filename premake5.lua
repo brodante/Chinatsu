@@ -14,8 +14,13 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Chinatsu/vendor/GLFW/include"
+IncludeDir["Glad"] = "Chinatsu/vendor/Glad/include"
+IncludeDir["ImGui"] = "Chinatsu/vendor/imgui"
 
 include "Chinatsu/vendor/GLFW"
+include "Chinatsu/vendor/Glad"
+include "Chinatsu/vendor/imgui"
+
 
 project "Chinatsu"
 	location "Chinatsu"
@@ -39,12 +44,16 @@ project "Chinatsu"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.ImGui}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
+		"ImGui",
 		"opengl32.lib"
 	}
 
@@ -57,7 +66,8 @@ project "Chinatsu"
 		defines
 		{
 			"CN_PLATFORM_WINDOWS",
-			"CN_BUILD_DLL"
+			"CN_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 
