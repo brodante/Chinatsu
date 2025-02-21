@@ -4,3 +4,6 @@
 [submodule "Chinatsu/vendor/GLFW"]
 	path = Chinatsu/vendor/GLFW
 	url = https://github.com/brodante/glfw
+[submodule "Chinatsu/vendor/imgui"]
+	path = Chinatsu/vendor/imgui
+	url = https://github.com/TheCherno/imgui/
